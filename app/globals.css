@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.cLink {
+  width: fit-content;
+  padding: 12px 15px 9px 15px;
+  text-align: center;
+  transform: skew(-20deg);
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cLink>span {
+  display: block;
+  margin: 0;
+  text-transform: uppercase;
+  transform: skew(20deg);
+}
+
+.beforeBg::before {
+  content: "";
+  background-image: url(/images/gameModes/released_game_brush.png);
+  position: absolute;
+  left: -40px;
+  top: 0;
+  height: 100%;
+  width: 324px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.gm-background {
+  background-image: url('/images/gameModes/released_slide_bg.jpg');
+  opacity: 0.05;
+}
+
+.text-gradient {
+  color: transparent;
+  background: linear-gradient(180deg, rgb(233, 163, 1) 0%, rgb(247, 252, 13) 44.23%, rgb(234.86, 174.84, 2.6) 100%, rgb(233, 163, 1) 100%);
+  -webkit-background-clip: text !important;
+  background-clip: text;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.fadeIn {
+  animation: fadeIn .5s ease-out;
+}
+
+@keyframes fadeIn  {
+ from {
+  
+  opacity: 0.1;
+ }
+ to {
+  opacity: 1;
+ }
+}
